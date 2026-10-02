@@ -13,10 +13,19 @@ async function firstSpanPoint(page: Page) {
   });
 }
 
-test('audio gesture, span selection, learning controls, profile, and resonance agree', async ({ page }, info) => {
+test('audio gesture, span selection, learning controls, profile, and resonance agree', async ({ page, baseURL }, info) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-  const external: string[] = []; page.on('request', req => { if (!req.url().startsWith('http://127.0.0.1:5198') && !req.url().startsWith('data:') && !req.url().startsWith('blob:')) external.push(req.url()); });
+  const origin = new URL(baseURL!).origin;
+  const external: string[] = [];
+  const failedAssets: string[] = [];
+  page.on('request', req => {
+    const url = new URL(req.url());
+    if (url.origin !== origin && url.protocol !== 'data:' && url.protocol !== 'blob:') external.push(req.url());
+  });
+  page.on('response', response => {
+    if (response.status() >= 400) failedAssets.push(`${response.status()} ${response.url()}`);
+  });
   await ready(page);
   await expect(page.getByRole('complementary', { name: 'Selected span' })).toHaveCount(0);
   await page.getByRole('button', { name: /Enable sound/ }).click();
@@ -53,7 +62,7 @@ test('audio gesture, span selection, learning controls, profile, and resonance a
   await page.getByRole('button', { name: 'Network map', exact: true }).click();
   await page.getByRole('button', { name: /Close span panel/ }).click();
   await page.screenshot({ path: `test-results/${info.project.name}-network.png`, fullPage: true });
-  expect(errors).toEqual([]); expect(external).toEqual([]);
+  expect(errors).toEqual([]); expect(external).toEqual([]); expect(failedAssets).toEqual([]);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
