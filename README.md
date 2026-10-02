@@ -4,9 +4,11 @@ A browser instrument that turns a **fictional overhead network** into playable s
 
 Built with React, TypeScript, Vite, the ArcGIS Maps SDK for JavaScript, and Web Audio. The default experience runs entirely from bundled synthetic GeoJSON with local SDK assets and fonts: no backend, account, API key, basemap service, or real infrastructure data is needed.
 
-![Synthetic network instrument, captured from the local static build](./docs/screenshots/network.png)
+**[Play the live demo on GitHub Pages](https://danmaps.github.io/strum-the-grid/).**
 
-![Four-mode resonance laboratory, captured from the local static build](./docs/screenshots/laboratory.png)
+![Synthetic network instrument, captured from the live GitHub Pages demo](./docs/screenshots/network.png)
+
+![Four-mode resonance laboratory, captured from the live GitHub Pages demo](./docs/screenshots/laboratory.png)
 
 ## Run locally
 
@@ -55,19 +57,21 @@ npm run preview
 
 Host `dist/` on any static host. For a subdirectory, set `VITE_BASE_PATH` during the build, e.g. `/strum-the-grid/`; Vite modules, fonts, and ArcGIS assets resolve relative to it. No client secrets are required.
 
-`.github/workflows/ci.yml` runs all checks and desktop/mobile browser tests on pull requests and `main`. `.github/workflows/deploy.yml` gates deployment on the same checks and publishes `main` to GitHub Pages using `/strum-the-grid/`. In repository **Settings → Pages**, choose **GitHub Actions** as the source. Pages must be available for the repository's visibility and account plan. Setup currently returns HTTP 422 because the current plan does not support Pages for this private repository; make the repository public or enable a compatible plan before retrying.
+`.github/workflows/ci.yml` runs all checks and desktop/mobile browser tests on pull requests and `main`. `.github/workflows/deploy.yml` gates deployment on the same checks and publishes `main` to GitHub Pages using `/strum-the-grid/`. This public repository has Pages enabled with **GitHub Actions** as the source. For a new repository, configure that source in **Settings → Pages** and ensure Pages is available for its visibility and account plan.
 
-Deployment skips unless the repository Actions variable `PAGES_ENABLED` is exactly `true`, preventing failed deployment attempts while Pages is unavailable. After Pages setup, add that variable in **Settings → Secrets and variables → Actions → Variables**, then push to `main` or run **Deploy GitHub Pages** from the Actions tab. Remove the variable or set it to `false` to pause publishing. Quality checks continue independently on every push and pull request.
+Deployment runs when the repository Actions variable `PAGES_ENABLED` is exactly `true`, as it is here. After Pages setup, add that variable in **Settings → Secrets and variables → Actions → Variables**, then push to `main` or run **Deploy GitHub Pages** from the Actions tab. Remove the variable or set it to `false` to pause publishing. Quality checks continue independently on every push and pull request.
 
-The deployment job reports the actual site URL. The `verify-hosted` job then runs all four desktop/mobile scenarios against that URL, checking the public learning loop, keyboard/touch interaction, audio, and hosted assets. Its screenshots and failure traces are saved as `hosted-browser-test-results`. A live demo link will be added after successful publishing and verification.
+The deployment job reports the actual site URL. The `verify-hosted` job then runs all four desktop/mobile scenarios against that URL, checking the public learning loop, keyboard/touch interaction, audio, and hosted assets. Its screenshots and failure traces are saved as `hosted-browser-test-results`.
+
+[The first public deployment and all four hosted browser checks passed](https://github.com/danmaps/strum-the-grid/actions/runs/37071351111) on October 2, 2026. The screenshots above were captured during that hosted run.
 
 To repeat the checks against an existing deployment, set `PLAYWRIGHT_BASE_URL` to the full site URL, including its subdirectory and trailing slash. This skips the local preview server and does not require a local build:
 
 ```sh
-PLAYWRIGHT_BASE_URL=https://YOUR-HOST/strum-the-grid/ npm run test:browser
+PLAYWRIGHT_BASE_URL=https://danmaps.github.io/strum-the-grid/ npm run test:browser
 ```
 
-In PowerShell, use `$env:PLAYWRIGHT_BASE_URL = 'https://YOUR-HOST/strum-the-grid/'` followed by `npm run test:browser`. Install Playwright Chromium first as described above.
+In PowerShell, use `$env:PLAYWRIGHT_BASE_URL = 'https://danmaps.github.io/strum-the-grid/'` followed by `npm run test:browser`. Install Playwright Chromium first as described above.
 
 ## Architecture
 

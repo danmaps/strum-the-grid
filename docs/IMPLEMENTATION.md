@@ -1,6 +1,6 @@
 # MVP acceptance map
 
-This implementation covers the local, deployable behavior requested in issues #1–#12. Live hosting depends on enabling GitHub Pages and publishing these changes; real-device and cross-browser evaluation remains a separate validation step.
+This implementation covers the MVP behavior requested in issues #1–#12. The [public GitHub Pages demo](https://danmaps.github.io/strum-the-grid/) is deployed and verified on desktop Chromium and Chromium mobile emulation; real-device and cross-browser evaluation remains a separate validation step.
 
 | Issue | Behavior and evidence |
 | --- | --- |
@@ -19,7 +19,7 @@ This implementation covers the local, deployable behavior requested in issues #1
 
 ## Verification scope
 
-Local verification: TypeScript typecheck, ESLint, all 29 tests in six unit/integration suites, production build, and four desktop/mobile Chromium end-to-end scenarios pass. npm dependency audit reports zero vulnerabilities. Browser runs check the compiled static output rather than depending on development-server behavior. [Remote quality checks passed for the MVP](https://github.com/danmaps/strum-the-grid/actions/runs/37065892382); live hosting remains pending the repository's Pages eligibility.
+TypeScript typecheck, ESLint, all 29 tests in six unit/integration suites, production build, and four desktop/mobile Chromium end-to-end scenarios pass locally and in CI. npm dependency audit reports zero vulnerabilities. Browser runs check the compiled static output rather than depending on development-server behavior. The [successful Pages workflow](https://github.com/danmaps/strum-the-grid/actions/runs/37071351111) built and tested the subdirectory deployment, published it, and passed all four browser scenarios against the public HTTPS URL on October 2, 2026. The hosted checks found no uncaught errors, HTTP asset failures, unexpected external requests, or mobile horizontal overflow.
 
 - Unit/integration suites test physical laws and responses, data/adapter contracts, immutable experiments, gesture ordering, Web Audio handoff/voice management, and cancellation/connectivity of sequencing.
 - End-to-end suites exercise actual ArcGIS rendering on desktop Chromium and touch-capable mobile Chromium emulation. They cover enable audio, map selection and strum, tension/frequency/sag changes, four-mode resonance, silent/reduced-motion use, keyboard play and stoppable sequencing, while checking no uncaught errors/external requests or mobile horizontal overflow.
@@ -27,5 +27,4 @@ Local verification: TypeScript typecheck, ESLint, all 29 tests in six unit/integ
 - The full demo contains 39 spans. Larger networks, low-end physical phones, pen hardware, Firefox/Safari, and engineering validation are not represented by Chromium emulation or by this educational dataset.
 - No real-data adapter is implemented. Bundled geography is invented; SDK assets and dependencies are build inputs rather than utility records.
 - Production publishing is gated on quality checks and browser tests. After publishing, the deployment workflow runs the same four scenarios against the actual Pages URL, including HTTP asset failures and unexpected external requests. `PLAYWRIGHT_BASE_URL` also allows repeatable checks against an existing deployment without starting a local server.
-- Pages setup returned HTTP 422: the current plan does not support Pages for this private repository. Publishing and the README demo URL require either public repository visibility or a compatible plan. No live deployment is claimed until hosted verification passes.
-- Deployment jobs skip until the repository Actions variable `PAGES_ENABLED` is set to `true` after Pages setup. This prevents repeated deployment failures while hosting is unavailable; quality checks remain automatic.
+- Pages is enabled for this public repository with GitHub Actions as the source and `PAGES_ENABLED=true`. Pushes to `main` publish after checks, then verify the hosted experience. Remove the variable or set it to `false` to pause deployment; quality checks remain automatic.
