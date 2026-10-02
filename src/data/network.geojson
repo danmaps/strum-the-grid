@@ -1,0 +1,1254 @@
+{
+  "type": "FeatureCollection",
+  "name": "Original synthetic demonstration network",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "DEMO-01",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.008273747363642349,
+            -0.001978504804349257
+          ],
+          [
+            -0.00683483477866107,
+            -0.0008993203656132988
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-01",
+        "fromStructureId": "SUPPORT-0",
+        "toStructureId": "SUPPORT-1",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 5850,
+        "displayClass": "distribution",
+        "spanLengthM": 200.00000037778483,
+        "modeledSagM": 2.68216069389348,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-02",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.00683483477866107,
+            -0.0008993203656132988
+          ],
+          [
+            -0.005395922193679792,
+            -0.00026979610968398964
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-02",
+        "fromStructureId": "SUPPORT-1",
+        "toStructureId": "SUPPORT-2",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 13510.000000000002,
+        "displayClass": "distribution",
+        "spanLengthM": 174.6424923241492,
+        "modeledSagM": 2.352307571183795,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-03",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.005395922193679792,
+            -0.00026979610968398964
+          ],
+          [
+            -0.0036872134990145245,
+            0.00026979610968398964
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-03",
+        "fromStructureId": "SUPPORT-2",
+        "toStructureId": "SUPPORT-3",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 29870,
+        "displayClass": "transmission",
+        "spanLengthM": 199.24858886950682,
+        "modeledSagM": 2.688251636022624,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-04",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0036872134990145245,
+            0.00026979610968398964
+          ],
+          [
+            -0.0017087086946652676,
+            0.000719456292490639
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-04",
+        "fromStructureId": "SUPPORT-3",
+        "toStructureId": "SUPPORT-4",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 7117.5,
+        "displayClass": "distribution",
+        "spanLengthM": 225.61028391885375,
+        "modeledSagM": 2.805246151366997,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-05",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0017087086946652676,
+            0.000719456292490639
+          ],
+          [
+            0.00026979610968398964,
+            0.0016187766581039376
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-05",
+        "fromStructureId": "SUPPORT-4",
+        "toStructureId": "SUPPORT-5",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 16240.000000000002,
+        "displayClass": "distribution",
+        "spanLengthM": 241.66091993567943,
+        "modeledSagM": 3.7469374066233865,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-06",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.00026979610968398964,
+            0.0016187766581039376
+          ],
+          [
+            0.0023382329505945766,
+            0.001978504804349257
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-06",
+        "fromStructureId": "SUPPORT-5",
+        "toStructureId": "SUPPORT-6",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 26100,
+        "displayClass": "transmission",
+        "spanLengthM": 233.45235097684835,
+        "modeledSagM": 4.223481820439867,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-07",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0023382329505945766,
+            0.001978504804349257
+          ],
+          [
+            0.004316737754943834,
+            0.001348980548419948
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-07",
+        "fromStructureId": "SUPPORT-6",
+        "toStructureId": "SUPPORT-7",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 6272.500000000001,
+        "displayClass": "distribution",
+        "spanLengthM": 230.86792800773532,
+        "modeledSagM": 3.3332447782577646,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-08",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.004316737754943834,
+            0.001348980548419948
+          ],
+          [
+            0.006205310522731761,
+            0.0018885727677879272
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-08",
+        "fromStructureId": "SUPPORT-7",
+        "toStructureId": "SUPPORT-8",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 14420,
+        "displayClass": "distribution",
+        "spanLengthM": 218.40329705577247,
+        "modeledSagM": 3.4466940501385417,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-09",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.006205310522731761,
+            0.0018885727677879272
+          ],
+          [
+            0.007914019217397029,
+            0.003237553316207875
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-09",
+        "fromStructureId": "SUPPORT-8",
+        "toStructureId": "SUPPORT-9",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 31755,
+        "displayClass": "transmission",
+        "spanLengthM": 242.07436909395514,
+        "modeledSagM": 3.7325027211736455,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-10",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.00683483477866107,
+            -0.0008993203656132988
+          ],
+          [
+            -0.00710463088834506,
+            -0.0017626679166020654
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-10",
+        "fromStructureId": "SUPPORT-1",
+        "toStructureId": "BRANCH-1--1-1",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 33640.00000000001,
+        "displayClass": "transmission",
+        "spanLengthM": 100.57832789417768,
+        "modeledSagM": 0.6082294830908824,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-11",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.00710463088834506,
+            -0.0017626679166020654
+          ],
+          [
+            -0.007374426998029049,
+            -0.002626015467590832
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-11",
+        "fromStructureId": "BRANCH-1--1-1",
+        "toStructureId": "BRANCH-1--1-2",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 5850,
+        "displayClass": "distribution",
+        "spanLengthM": 100.57832789002957,
+        "modeledSagM": 0.6783184396826382,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-12",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.007374426998029049,
+            -0.002626015467590832
+          ],
+          [
+            -0.007644223107713039,
+            -0.003489363018579599
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-12",
+        "fromStructureId": "BRANCH-1--1-2",
+        "toStructureId": "BRANCH-1--1-3",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 13510.000000000002,
+        "displayClass": "distribution",
+        "spanLengthM": 100.57832788384978,
+        "modeledSagM": 0.7801948651247764,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-13",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.00683483477866107,
+            -0.0008993203656132988
+          ],
+          [
+            -0.006250276541012426,
+            -0.00003597281462453195
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-13",
+        "fromStructureId": "SUPPORT-1",
+        "toStructureId": "BRANCH-1-1-1",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 29870,
+        "displayClass": "transmission",
+        "spanLengthM": 115.93532704096894,
+        "modeledSagM": 0.910145849850162,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-14",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.006250276541012426,
+            -0.00003597281462453195
+          ],
+          [
+            -0.005665718303363782,
+            0.0008273747363642349
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-14",
+        "fromStructureId": "BRANCH-1-1-1",
+        "toStructureId": "BRANCH-1-1-2",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 7117.5,
+        "displayClass": "distribution",
+        "spanLengthM": 115.93532704131364,
+        "modeledSagM": 0.7407723678308497,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-15",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.005665718303363782,
+            0.0008273747363642349
+          ],
+          [
+            -0.005081160065715138,
+            0.0016907222873530016
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-15",
+        "fromStructureId": "BRANCH-1-1-2",
+        "toStructureId": "BRANCH-1-1-3",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 16240.000000000002,
+        "displayClass": "distribution",
+        "spanLengthM": 115.93532703338406,
+        "modeledSagM": 0.8623730426834997,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-16",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0036872134990145245,
+            0.00026979610968398964
+          ],
+          [
+            -0.003957009608698514,
+            -0.000701469885178373
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-16",
+        "fromStructureId": "SUPPORT-3",
+        "toStructureId": "BRANCH-3--1-1",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 12600,
+        "displayClass": "distribution",
+        "spanLengthM": 112.08925038887418,
+        "modeledSagM": 1.0389795481113102,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-17",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.003957009608698514,
+            -0.000701469885178373
+          ],
+          [
+            -0.004226805718382504,
+            -0.0016727358800407357
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-17",
+        "fromStructureId": "BRANCH-3--1-1",
+        "toStructureId": "BRANCH-3--1-2",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 27985.000000000004,
+        "displayClass": "transmission",
+        "spanLengthM": 112.08925038720774,
+        "modeledSagM": 0.9080656572151833,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-18",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.004226805718382504,
+            -0.0016727358800407357
+          ],
+          [
+            -0.004496601828066493,
+            -0.0026440018749030983
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-18",
+        "fromStructureId": "BRANCH-3--1-2",
+        "toStructureId": "BRANCH-3--1-3",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 6695,
+        "displayClass": "distribution",
+        "spanLengthM": 112.08925038323402,
+        "modeledSagM": 0.736135928930847,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-19",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0036872134990145245,
+            0.00026979610968398964
+          ],
+          [
+            -0.0031026552613658805,
+            0.0012410621045463523
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-19",
+        "fromStructureId": "SUPPORT-3",
+        "toStructureId": "BRANCH-3-1-1",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 15330,
+        "displayClass": "distribution",
+        "spanLengthM": 126.05157700681416,
+        "modeledSagM": 1.0799509386974846,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-20",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0031026552613658805,
+            0.0012410621045463523
+          ],
+          [
+            -0.0025180970237172365,
+            0.0022123280994087147
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-20",
+        "fromStructureId": "BRANCH-3-1-1",
+        "toStructureId": "BRANCH-3-1-2",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 33640.00000000001,
+        "displayClass": "transmission",
+        "spanLengthM": 126.05157699450679,
+        "modeledSagM": 0.9553339516524173,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-21",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0025180970237172365,
+            0.0022123280994087147
+          ],
+          [
+            -0.0019335387860685922,
+            0.0031835940942710776
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-21",
+        "fromStructureId": "BRANCH-3-1-2",
+        "toStructureId": "BRANCH-3-1-3",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 5850,
+        "displayClass": "distribution",
+        "spanLengthM": 126.05157697256762,
+        "modeledSagM": 1.0654212814470974,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-22",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.00026979610968398964,
+            0.0016187766581039376
+          ],
+          [
+            0,
+            0.0005395922193679793
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-22",
+        "fromStructureId": "SUPPORT-5",
+        "toStructureId": "BRANCH-5--1-1",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 6272.500000000001,
+        "displayClass": "distribution",
+        "spanLengthM": 123.6931690269131,
+        "modeledSagM": 0.9568226106136047,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-23",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            0.0005395922193679793
+          ],
+          [
+            -0.00026979610968398964,
+            -0.0005395922193679793
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-23",
+        "fromStructureId": "BRANCH-5--1-1",
+        "toStructureId": "BRANCH-5--1-2",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 14420,
+        "displayClass": "distribution",
+        "spanLengthM": 123.6931690282038,
+        "modeledSagM": 1.1055433753942494,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-24",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.00026979610968398964,
+            -0.0005395922193679793
+          ],
+          [
+            -0.0005395922193679793,
+            -0.0016187766581039376
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-24",
+        "fromStructureId": "BRANCH-5--1-2",
+        "toStructureId": "BRANCH-5--1-3",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 31755,
+        "displayClass": "transmission",
+        "spanLengthM": 123.6931690269131,
+        "modeledSagM": 0.974527162196094,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-25",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.00026979610968398964,
+            0.0016187766581039376
+          ],
+          [
+            0.0008543543473326338,
+            0.002697961096839896
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-25",
+        "fromStructureId": "SUPPORT-5",
+        "toStructureId": "BRANCH-5-1-1",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 7540.000000000001,
+        "displayClass": "distribution",
+        "spanLengthM": 136.47344090376072,
+        "modeledSagM": 0.9689594533537389,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-26",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0008543543473326338,
+            0.002697961096839896
+          ],
+          [
+            0.001438912584981278,
+            0.0037771455355758545
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-26",
+        "fromStructureId": "BRANCH-5-1-1",
+        "toStructureId": "BRANCH-5-1-2",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 12600,
+        "displayClass": "distribution",
+        "spanLengthM": 136.47344087630304,
+        "modeledSagM": 1.5401937336421765,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-27",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.001438912584981278,
+            0.0037771455355758545
+          ],
+          [
+            0.002023470822629922,
+            0.004856329974311813
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-27",
+        "fromStructureId": "BRANCH-5-1-2",
+        "toStructureId": "BRANCH-5-1-3",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 27985.000000000004,
+        "displayClass": "transmission",
+        "spanLengthM": 136.4734408378622,
+        "modeledSagM": 1.3461256641428567,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-28",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.004316737754943834,
+            0.001348980548419948
+          ],
+          [
+            0.004046941645259844,
+            0.00016187766581039377
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-28",
+        "fromStructureId": "SUPPORT-7",
+        "toStructureId": "BRANCH-7--1-1",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 29870,
+        "displayClass": "transmission",
+        "spanLengthM": 135.36617035574218,
+        "modeledSagM": 1.2407940296801645,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-29",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.004046941645259844,
+            0.00016187766581039377
+          ],
+          [
+            0.0037771455355758545,
+            -0.0010252252167991605
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-29",
+        "fromStructureId": "BRANCH-7--1-1",
+        "toStructureId": "BRANCH-7--1-2",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 7117.5,
+        "displayClass": "distribution",
+        "spanLengthM": 135.36617035613136,
+        "modeledSagM": 1.0098886145640242,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-30",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0037771455355758545,
+            -0.0010252252167991605
+          ],
+          [
+            0.003507349425891865,
+            -0.0022123280994087147
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-30",
+        "fromStructureId": "BRANCH-7--1-2",
+        "toStructureId": "BRANCH-7--1-3",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 16240.000000000002,
+        "displayClass": "distribution",
+        "spanLengthM": 135.36617035366646,
+        "modeledSagM": 1.1756657715927148,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-31",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.004316737754943834,
+            0.001348980548419948
+          ],
+          [
+            0.004901295992592478,
+            0.002536083431029502
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-31",
+        "fromStructureId": "SUPPORT-7",
+        "toStructureId": "BRANCH-7-1-1",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 26100,
+        "displayClass": "transmission",
+        "spanLengthM": 147.13599181005054,
+        "modeledSagM": 1.6776909724276177,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-32",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.004901295992592478,
+            0.002536083431029502
+          ],
+          [
+            0.005485854230241122,
+            0.0037231863136390564
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-32",
+        "fromStructureId": "BRANCH-7-1-1",
+        "toStructureId": "BRANCH-7-1-2",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 6272.500000000001,
+        "displayClass": "distribution",
+        "spanLengthM": 147.13599178371675,
+        "modeledSagM": 1.3538727245383109,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-33",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.005485854230241122,
+            0.0037231863136390564
+          ],
+          [
+            0.006070412467889766,
+            0.004910289196248611
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-33",
+        "fromStructureId": "BRANCH-7-1-2",
+        "toStructureId": "BRANCH-7-1-3",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 14420,
+        "displayClass": "distribution",
+        "spanLengthM": 147.1359917450564,
+        "modeledSagM": 1.5643077455732703,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-34",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.006205310522731761,
+            0.0018885727677879272
+          ],
+          [
+            0.005935514413047772,
+            0.0006475106632415751
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-34",
+        "fromStructureId": "SUPPORT-8",
+        "toStructureId": "BRANCH-8--1-1",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 7117.5,
+        "displayClass": "distribution",
+        "spanLengthM": 141.22322784619084,
+        "modeledSagM": 1.099171497952179,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-35",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.005935514413047772,
+            0.0006475106632415751
+          ],
+          [
+            0.005665718303363782,
+            -0.0005935514413047771
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-35",
+        "fromStructureId": "BRANCH-8--1-1",
+        "toStructureId": "BRANCH-8--1-2",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 16240.000000000002,
+        "displayClass": "distribution",
+        "spanLengthM": 141.22322784775088,
+        "modeledSagM": 1.2796047887777775,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-36",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.005665718303363782,
+            -0.0005935514413047771
+          ],
+          [
+            0.005395922193679792,
+            -0.0018346135458511294
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-36",
+        "fromStructureId": "BRANCH-8--1-2",
+        "toStructureId": "BRANCH-8--1-3",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 26100,
+        "displayClass": "transmission",
+        "spanLengthM": 141.22322784632084,
+        "modeledSagM": 1.5455618624924459,
+        "temperatureC": 20,
+        "dampingRatio": 0.07100000000000001,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-37",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.006205310522731761,
+            0.0018885727677879272
+          ],
+          [
+            0.0067898687603804055,
+            0.0031296348723342795
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-37",
+        "fromStructureId": "SUPPORT-8",
+        "toStructureId": "BRANCH-8-1-1",
+        "conductorType": "Aluminum · light",
+        "linearDensityKgPerM": 0.32,
+        "modeledTensionN": 6272.500000000001,
+        "displayClass": "distribution",
+        "spanLengthM": 152.54179784397408,
+        "modeledSagM": 1.4551833541804329,
+        "temperatureC": 20,
+        "dampingRatio": 0.035,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-38",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0067898687603804055,
+            0.0031296348723342795
+          ],
+          [
+            0.007374426998029049,
+            0.004370696976880631
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-38",
+        "fromStructureId": "BRANCH-8-1-1",
+        "toStructureId": "BRANCH-8-1-2",
+        "conductorType": "Aluminum · reinforced",
+        "linearDensityKgPerM": 0.85,
+        "modeledTensionN": 14420,
+        "displayClass": "distribution",
+        "spanLengthM": 152.54179781120368,
+        "modeledSagM": 1.6813652798627674,
+        "temperatureC": 20,
+        "dampingRatio": 0.047,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "DEMO-39",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.007374426998029049,
+            0.004370696976880631
+          ],
+          [
+            0.007958985235677694,
+            0.005611759081426984
+          ]
+        ]
+      },
+      "properties": {
+        "id": "DEMO-39",
+        "fromStructureId": "BRANCH-8-1-2",
+        "toStructureId": "BRANCH-8-1-3",
+        "conductorType": "Bundled · heavy",
+        "linearDensityKgPerM": 1.65,
+        "modeledTensionN": 31755,
+        "displayClass": "transmission",
+        "spanLengthM": 152.54179776543853,
+        "modeledSagM": 1.482109314133786,
+        "temperatureC": 20,
+        "dampingRatio": 0.059000000000000004,
+        "source": "synthetic",
+        "lengthSource": "geometry"
+      }
+    }
+  ]
+}

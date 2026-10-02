@@ -1,0 +1,565 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "SUPPORT-0",
+      "properties": {
+        "id": "SUPPORT-0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.008273747363642349,
+          -0.001978504804349257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-1",
+      "properties": {
+        "id": "SUPPORT-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.00683483477866107,
+          -0.0008993203656132988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-2",
+      "properties": {
+        "id": "SUPPORT-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.005395922193679792,
+          -0.00026979610968398964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-3",
+      "properties": {
+        "id": "SUPPORT-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0036872134990145245,
+          0.00026979610968398964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-4",
+      "properties": {
+        "id": "SUPPORT-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0017087086946652676,
+          0.000719456292490639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-5",
+      "properties": {
+        "id": "SUPPORT-5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.00026979610968398964,
+          0.0016187766581039376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-6",
+      "properties": {
+        "id": "SUPPORT-6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0023382329505945766,
+          0.001978504804349257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-7",
+      "properties": {
+        "id": "SUPPORT-7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.004316737754943834,
+          0.001348980548419948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-8",
+      "properties": {
+        "id": "SUPPORT-8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.006205310522731761,
+          0.0018885727677879272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SUPPORT-9",
+      "properties": {
+        "id": "SUPPORT-9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.007914019217397029,
+          0.003237553316207875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-1--1-1",
+      "properties": {
+        "id": "BRANCH-1--1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.00710463088834506,
+          -0.0017626679166020654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-1--1-2",
+      "properties": {
+        "id": "BRANCH-1--1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.007374426998029049,
+          -0.002626015467590832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-1--1-3",
+      "properties": {
+        "id": "BRANCH-1--1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.007644223107713039,
+          -0.003489363018579599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-1-1-1",
+      "properties": {
+        "id": "BRANCH-1-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.006250276541012426,
+          -0.00003597281462453195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-1-1-2",
+      "properties": {
+        "id": "BRANCH-1-1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.005665718303363782,
+          0.0008273747363642349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-1-1-3",
+      "properties": {
+        "id": "BRANCH-1-1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.005081160065715138,
+          0.0016907222873530016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-3--1-1",
+      "properties": {
+        "id": "BRANCH-3--1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.003957009608698514,
+          -0.000701469885178373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-3--1-2",
+      "properties": {
+        "id": "BRANCH-3--1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.004226805718382504,
+          -0.0016727358800407357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-3--1-3",
+      "properties": {
+        "id": "BRANCH-3--1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.004496601828066493,
+          -0.0026440018749030983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-3-1-1",
+      "properties": {
+        "id": "BRANCH-3-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0031026552613658805,
+          0.0012410621045463523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-3-1-2",
+      "properties": {
+        "id": "BRANCH-3-1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0025180970237172365,
+          0.0022123280994087147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-3-1-3",
+      "properties": {
+        "id": "BRANCH-3-1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0019335387860685922,
+          0.0031835940942710776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-5--1-1",
+      "properties": {
+        "id": "BRANCH-5--1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0.0005395922193679793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-5--1-2",
+      "properties": {
+        "id": "BRANCH-5--1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.00026979610968398964,
+          -0.0005395922193679793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-5--1-3",
+      "properties": {
+        "id": "BRANCH-5--1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0005395922193679793,
+          -0.0016187766581039376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-5-1-1",
+      "properties": {
+        "id": "BRANCH-5-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0008543543473326338,
+          0.002697961096839896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-5-1-2",
+      "properties": {
+        "id": "BRANCH-5-1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.001438912584981278,
+          0.0037771455355758545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-5-1-3",
+      "properties": {
+        "id": "BRANCH-5-1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.002023470822629922,
+          0.004856329974311813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-7--1-1",
+      "properties": {
+        "id": "BRANCH-7--1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.004046941645259844,
+          0.00016187766581039377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-7--1-2",
+      "properties": {
+        "id": "BRANCH-7--1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0037771455355758545,
+          -0.0010252252167991605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-7--1-3",
+      "properties": {
+        "id": "BRANCH-7--1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.003507349425891865,
+          -0.0022123280994087147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-7-1-1",
+      "properties": {
+        "id": "BRANCH-7-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.004901295992592478,
+          0.002536083431029502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-7-1-2",
+      "properties": {
+        "id": "BRANCH-7-1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.005485854230241122,
+          0.0037231863136390564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-7-1-3",
+      "properties": {
+        "id": "BRANCH-7-1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.006070412467889766,
+          0.004910289196248611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-8--1-1",
+      "properties": {
+        "id": "BRANCH-8--1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.005935514413047772,
+          0.0006475106632415751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-8--1-2",
+      "properties": {
+        "id": "BRANCH-8--1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.005665718303363782,
+          -0.0005935514413047771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-8--1-3",
+      "properties": {
+        "id": "BRANCH-8--1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.005395922193679792,
+          -0.0018346135458511294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-8-1-1",
+      "properties": {
+        "id": "BRANCH-8-1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0067898687603804055,
+          0.0031296348723342795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-8-1-2",
+      "properties": {
+        "id": "BRANCH-8-1-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.007374426998029049,
+          0.004370696976880631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BRANCH-8-1-3",
+      "properties": {
+        "id": "BRANCH-8-1-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.007958985235677694,
+          0.005611759081426984
+        ]
+      }
+    }
+  ]
+}
