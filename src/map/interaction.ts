@@ -6,11 +6,10 @@ const sub = (a: ScreenPoint, b: ScreenPoint) => ({ x: a.x - b.x, y: a.y - b.y })
 const length = (a: ScreenPoint, b: ScreenPoint) => Math.hypot(a.x - b.x, a.y - b.y);
 
 /** Segment intersection independent of GIS/audio; ordered by distance along the pointer movement. */
-export function crossings(from: ScreenPoint, to: ScreenPoint, spans: ScreenSpan[], already: Set<string> = new Set()) {
+export function crossings(from: ScreenPoint, to: ScreenPoint, spans: ScreenSpan[]) {
   const r = sub(to, from);
   const hits: { spanId: string; crossingPosition: number; alongGesture: number }[] = [];
   for (const span of spans) {
-    if (already.has(span.id)) continue;
     const total = span.points.slice(1).reduce((sum, p, i) => sum + length(p, span.points[i]), 0);
     let traversed = 0;
     for (let i = 1; i < span.points.length; i++) {
@@ -19,7 +18,8 @@ export function crossings(from: ScreenPoint, to: ScreenPoint, spans: ScreenSpan[
       if (Math.abs(denominator) > 1e-8 && total > 0) {
         const delta = sub(a, from);
         const t = cross(delta, s) / denominator; const u = cross(delta, r) / denominator;
-        if (t >= 0 && t <= 1 && u >= 0 && u <= 1) { hits.push({ spanId: span.id, crossingPosition: (traversed + u * part) / total, alongGesture: t }); break; }
+        // Include arrivals on a line, but not departures from it: adjacent pointer samples share an endpoint.
+        if (t > 0 && t <= 1 && u >= 0 && u <= 1) { hits.push({ spanId: span.id, crossingPosition: (traversed + u * part) / total, alongGesture: t }); break; }
       }
       traversed += part;
     }

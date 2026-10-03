@@ -30,7 +30,7 @@ export default function NetworkMap(props: Props) {
   const [retry, setRetry] = useState(0);
   const [hovered, setHovered] = useState<string | null>(null);
   const projected = useRef(screenSpans); projected.current = screenSpans;
-  const gesture = useRef<{ id: number; start: ScreenPoint; previous: ScreenPoint; time: number; crossed: Set<string>; distance: number } | null>(null);
+  const gesture = useRef<{ id: number; start: ScreenPoint; previous: ScreenPoint; time: number; lastCrossed: string | null; distance: number } | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -125,7 +125,7 @@ export default function NetworkMap(props: Props) {
     if (event.button !== 0 || gesture.current) return;
     event.preventDefault(); event.currentTarget.setPointerCapture(event.pointerId);
     const point = localPoint(event);
-    gesture.current = { id: event.pointerId, start: point, previous: point, time: performance.now(), crossed: new Set(), distance: 0 };
+    gesture.current = { id: event.pointerId, start: point, previous: point, time: performance.now(), lastCrossed: null, distance: 0 };
   }
   function pointerMove(event: React.PointerEvent<SVGSVGElement>) {
     const point = localPoint(event); const g = gesture.current;
@@ -133,8 +133,8 @@ export default function NetworkMap(props: Props) {
     if (g.id !== event.pointerId) return;
     const now = performance.now(); const distance = Math.hypot(point.x - g.previous.x, point.y - g.previous.y);
     const velocity = distance / Math.max(1, now - g.time) * 1000;
-    for (const hit of crossings(g.previous, point, screenSpans, g.crossed)) {
-      g.crossed.add(hit.spanId);
+    for (const hit of crossings(g.previous, point, screenSpans)) {
+      g.lastCrossed = hit.spanId;
       latest.current.onStrum({ ...hit, velocity, timestamp: now, kind: 'strum' });
     }
     g.distance += distance; g.previous = point; g.time = now;
@@ -142,12 +142,12 @@ export default function NetworkMap(props: Props) {
   function pointerUp(event: React.PointerEvent<SVGSVGElement>) {
     const g = gesture.current;
     if (!g || g.id !== event.pointerId) return;
-    if (g.distance < 8 && g.crossed.size === 0) {
+    if (g.distance < 8 && g.lastCrossed === null) {
       const id = nearestSpan(localPoint(event), screenSpans, event.pointerType === 'touch' ? 20 : 12);
       if (id) { latest.current.onSelect(id); latest.current.onStrum({ spanId: id, crossingPosition: 0.5, velocity: 0, timestamp: performance.now(), kind: 'preview' }); }
     }
     // Defer the inspection panel until release so map resizing cannot move targets mid-swipe.
-    if (g.crossed.size) latest.current.onSelect([...g.crossed].at(-1)!);
+    if (g.lastCrossed) latest.current.onSelect(g.lastCrossed);
     gesture.current = null;
     if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
   }

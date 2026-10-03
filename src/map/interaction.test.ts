@@ -10,9 +10,15 @@ describe('pointer gestures', () => {
     const hits = crossings({ x: 0, y: 25 }, { x: 100, y: 25 }, spans);
     expect(hits.map(h => h.spanId)).toEqual(['left', 'middle', 'right']); expect(hits[0].crossingPosition).toBeCloseTo(0.25);
   });
-  it('suppresses duplicates per gesture and supports reverse swipes', () => {
-    const hits = crossings({ x: 100, y: 50 }, { x: 0, y: 50 }, spans, new Set(['middle']));
-    expect(hits.map(h => h.spanId)).toEqual(['right', 'left']);
+  it('rings spans on every back-and-forth crossing without releasing', () => {
+    const points = [0, 100, 0, 100];
+    const hits = points.slice(1).flatMap((x, i) => crossings({ x: points[i], y: 50 }, { x, y: 50 }, spans));
+    expect(hits.map(h => h.spanId)).toEqual(['left', 'middle', 'right', 'right', 'middle', 'left', 'left', 'middle', 'right']);
+  });
+  it('counts a shared pointer endpoint once and allows an immediate recrossing', () => {
+    const points = [40, 50, 60, 40];
+    const hits = points.slice(1).flatMap((x, i) => crossings({ x: points[i], y: 50 }, { x, y: 50 }, [spans[2]]));
+    expect(hits.map(h => h.spanId)).toEqual(['middle', 'middle']);
   });
   it('does not strum parallel paths, missed segments, or stationary gestures', () => {
     expect(crossings({ x: 20, y: 0 }, { x: 20, y: 100 }, [spans[1]])).toEqual([]);
